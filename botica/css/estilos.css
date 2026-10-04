@@ -30,7 +30,7 @@ a { color: inherit; }
 :focus-visible { outline: 3px solid var(--bronce); outline-offset: 3px; }
 .contenedor { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
 
-/* Huecos para fotos de Pexels: reemplazar cada .foto por un <img> */
+/* Contenedores de fotos (Pexels) */
 .foto {
   position: relative; overflow: hidden; background-color: var(--verde-claro);
   background-image:
@@ -38,12 +38,8 @@ a { color: inherit; }
     linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px);
   background-size: 28px 14px;
 }
-.foto::after {
-  content: "Foto: " attr(data-pexels);
-  position: absolute; left: .75rem; bottom: .6rem; right: .75rem;
-  font-size: .8rem; color: rgba(255,255,255,.75);
-}
 .foto img { width: 100%; height: 100%; object-fit: cover; }
+.galeria .g4 img { object-position: center 52%; }
 
 /* Cabecera */
 header {
